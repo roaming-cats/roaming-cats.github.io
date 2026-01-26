@@ -1,3 +1,82 @@
+/* jersey-10-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jersey 10';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/jersey-10-v4-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* coral-pixels-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Coral Pixels';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/coral-pixels-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jacquard-12-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jacquard 12';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/jacquard-12-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* jacquard-24-charted-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Jacquard 24 Charted';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/jacquard-24-charted-v5-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* micro-5-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Micro 5';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/micro-5-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* micro-5-charted-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Micro 5 Charted';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/micro-5-charted-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* tiny5-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Tiny5';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/tiny5-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-text {
+    background: linear-gradient(
+        to right,
+        #FAF3E1,
+        #FF6D1F,
+        #222222,
+        #FF6D1F,
+        #FAF3E1,
+        #FF6D1F,
+        #222222
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
