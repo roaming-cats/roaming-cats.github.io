@@ -1,8 +1,23 @@
 import profile2 from "../assets/pictures/profile2.png";
+import { GiCat } from "react-icons/gi";
+import arrow from "../assets/icons/pixel-arrow.png"
+import { useNavigate } from "react-router";
 
 export default function LandingPage () {
+    const navigate = useNavigate();
+    
     return (
-        <div className="flex w-screen h-screen items-center justify-center flex-col">
+        <div className="flex w-screen h-screen items-center justify-center flex-col overflow-hidden bg-custom-black2">
+            <div className="absolute inset-0 flex items-center justify-center w-full h-44 mt-4 sm:flex-row">
+                <img src={arrow} alt="arrow pointing" className="h-16 w-16 mr-10 animate-bounce-x" />
+                <button onClick={() => navigate("/profile")} className="bg-custom-beige2 font-jersey flex flex-row items-center justify-center w-56 h-14 rounded-[30px] shadow-[200px]">
+                    <div className="bg-custom-black2 rounded-full h-12 w-12 flex ml-0 mr-3 items-center justify-center pr-1">
+                        <GiCat className=" text-custom-beige w-7 h-7 "/>
+                    </div>
+                    <p className="mr-2 text-[30px]"> Roaming Cats</p>
+                </button>
+                <div className="rotate-180"><img src={arrow} alt="arrow pointing" className="h-16 w-16 mr-10 animate-bounce-x" /></div>
+            </div>
             <div className="mb-[480px] text-center text-[70px] font-jersey text-custom-beige">
                 <div className="flex flex-col xl:flex-row 2xl:mb-16">
                     <div className="h-20 2xl:">
