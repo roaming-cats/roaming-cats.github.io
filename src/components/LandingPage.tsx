@@ -1,24 +1,12 @@
 import profile2 from "../assets/pictures/profile2.png";
-import { GiCat } from "react-icons/gi";
-import arrow from "../assets/icons/pixel-arrow.png"
-import { useNavigate } from "react-router";
+
 
 export default function LandingPage () {
-    const navigate = useNavigate();
     
     return (
-        <div className="flex w-screen h-screen items-center justify-center flex-col overflow-hidden bg-custom-black2">
-            <div className="absolute inset-0 flex items-center justify-center w-full h-44 sm:flex-row">
-                <img src={arrow} alt="arrow pointing" className="h-16 w-16 mr-10 animate-bounce-x mb-10" />
-                <button onClick={() => navigate("/profile")} className="bg-custom-beige2 font-jersey flex flex-row items-center justify-center w-56 h-14 rounded-[30px] shadow-[200px] mb-10">
-                    <div className="bg-custom-black2 rounded-full h-12 w-12 flex ml-0 mr-3 items-center justify-center pr-1">
-                        <GiCat className=" text-custom-beige w-7 h-7 "/>
-                    </div>
-                    <p className="mr-2 text-[30px]"> Roaming Cats</p>
-                </button>
-                <div className="rotate-180"><img src={arrow} alt="arrow pointing" className="h-16 w-16 mr-10 mt-10 animate-bounce-x" /></div>
-            </div>
-            <div className="mb-[400px] text-center text-[70px] font-jersey text-custom-beige">
+        <div className="flex relative w-screen h-screen items-center justify-center flex-col overflow-hidden bg-custom-black2">
+
+            <div className="mb-[450px] text-center text-[70px] font-jersey text-custom-beige">
                 <div className="flex flex-col xl:flex-row 2xl:mb-16">
                     <div className="h-20 2xl:">
                         <h1>Design-driven</h1>
@@ -64,10 +52,11 @@ export default function LandingPage () {
                 </div>
             </div>
             <div className="flex items-center justify-center absolute inset-0 flex-col z-20 overflow-hidden">
-                <img src={profile2} alt="profile picture of the account" className="sm:mt-[435px] xl:mt-[405px] ml-11 w-[437px] h-[600px] " />
-                <div className="xl:h-40 sm:h-32 w-[3000px] bg-black z-50"></div>
+                <img src={profile2} alt="profile picture of the account" className="sm:mt-[305px] xl:mt-[265px] ml-11 w-[437px] h-[600px] " />
             </div>
-            
+            <div className=" h-10 w-[3000px] absolute bg-custom-beige mt-[870px] xl:mt-[870px] z-20 flex items-center justify-center border-3 border-custom-beige2">
+                <p className="text-[40px] text-custom-orange tracking-wide font-micro5 ">CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION</p>
+            </div>     
             
         </div>
     )

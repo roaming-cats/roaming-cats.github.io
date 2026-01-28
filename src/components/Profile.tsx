@@ -2,6 +2,6 @@
 
 export default function Profile () {
     return (
-        <div>hello</div>
+        <div className="min-h-screen w-full">hello</div>
     )
 }

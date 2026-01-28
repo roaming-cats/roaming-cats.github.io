@@ -44,7 +44,7 @@ export default {
         },
         animation: {
         gradient: "gradient 6s linear infinite",
-        'bounce-x': 'bounce-x 1s infinite'
+        'bounce-x': 'bounce-x 3s infinite'
       },
       
     },
