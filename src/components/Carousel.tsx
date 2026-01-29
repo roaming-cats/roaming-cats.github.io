@@ -32,7 +32,7 @@ export default function Carousel ({children : slides, autoSlide = false, autoSli
                 </button>
                 <button onClick={next} className="p-0.2 rounded-full shadow bg-white/50 text-gray-800 hover:bg-white/80">
                     {
-                        !autoSlide && <BiChevronLeft size={40}/>
+                        !autoSlide && <BiChevronRight size={40}/>
                     }                
                 </button>
             </div>
