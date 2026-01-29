@@ -16,10 +16,6 @@ export default {
         tiny5: ['"Tiny5"', 'sans-serif'],
       },
       colors: {
-        'custom-black': '#061E29',
-        'custom-navy': '#1D546D',
-        'custom-teal': '#5F9598',
-        'custom-grey': '#F3F4F4',
         'custom-beige': '#FAF3E1',
         'custom-beige2': '#F5E7C6',
         'custom-orange': '#FF6D1F',
@@ -31,20 +27,25 @@ export default {
             "100%": {backgroundPosition: "100%, 50%"}
           },
           'bounce-x': {
-           '0%, 100%': {
-            transform: 'translateX(0%)',
-            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+            '0%, 100%': {
+              transform: 'translateX(0%)',
+              'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+            },
+            '50%': {
+              transform: 'translateX(25%)', 
+              'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
+            },
           },
-          '50%': {
-            transform: 'translateX(25%)', 
-            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
-          }
-        },
-          
+            'color-pulse': {
+              '0%, 100%': { backgroundColor: '#FAF3E1' },      
+              '25%': { backgroundColor: '#F5E7C6' },      
+              '75%': { backgroundColor: '#FF6D1F' },        
+            }
         },
         animation: {
         gradient: "gradient 6s linear infinite",
-        'bounce-x': 'bounce-x 3s infinite'
+        'bounce-x': 'bounce-x 3s infinite',
+        'color-pulse': 'color-pulse 10s ease-in-out infinite'
       },
       
     },

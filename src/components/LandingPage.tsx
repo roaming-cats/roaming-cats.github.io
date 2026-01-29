@@ -52,9 +52,9 @@ export default function LandingPage () {
                 </div>
             </div>
             <div className="flex items-center justify-center absolute inset-0 flex-col z-20 overflow-hidden">
-                <img src={profile2} alt="profile picture of the account" className="sm:mt-[305px] xl:mt-[265px] ml-11 w-[437px] h-[600px] " />
+                <img src={profile2} alt="profile picture of the account" className="sm:mt-[305px] xl:mt-[265px] ml-11 w-[437px] h-[600px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.78)]" />
             </div>
-            <div className=" h-10 w-[3000px] absolute bg-custom-beige mt-[870px] xl:mt-[870px] z-20 flex items-center justify-center border-3 border-custom-beige2">
+            <div className=" h-10 w-[3000px] absolute bg-custom-beige mt-[870px] xl:mt-[870px] z-20 flex items-center justify-center border-3 border-custom-beige2 ">
                 <p className="text-[40px] text-custom-orange tracking-wide font-micro5 ">CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION</p>
             </div>     
             

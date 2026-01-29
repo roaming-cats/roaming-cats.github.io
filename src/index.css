@@ -65,34 +65,48 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-text {
-    background: linear-gradient(
-        to right,
-        #222222,
-        #FF6D1F,
-        #222222,
-        #FF6D1F,
-        #222222,
-        #FF6D1F,
-        #222222
-    );
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
+
+.rect {
+  clip-path: path("M 30,60 L 180,60 A 30,30 0,0,0 210,30 L 210,30 A 30,30 0,0,1 240,0 L 420,0 A 30,30 0,0,1 450,30 L 450,570 A 30,30 0,0,1 420,600 L 30,600 A 30,30 0,0,1 0,570 L 0,90 A 30,30 0,0,1 30,60 Z");
 }
 
 .gradient-text2 {
-    background: linear-gradient(
-        to right,
-        #FAF3E1,
-        #FF6D1F,
-        #222222,
-        #FF6D1F,
-        #FAF3E1,
-        #FF6D1F,
-        #222222
-    );
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
+  background: linear-gradient(
+      to right,
+      #FAF3E1,
+      #FF6D1F,
+      #F5E7C6,
+      #FF6D1F,
+      #F5E7C6,
+      #FF6D1F,
+      #FAF3E1
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
+
+.gradient-text {
+  background: linear-gradient(
+      to right,
+      #222222,
+      #FF6D1F,
+      #222222,
+      #FF6D1F,
+      #222222,
+      #FF6D1F,
+      #222222
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.title-rect {
+  clip-path: inset(0.5px round 24px 0);
+}
+
+.rect2 {
+  clip-path: path("M 30,25 L 420,25 L 420,0 L 460,0 L 460,25 L 570,25 A 30,30 0 0 1 600,55 L 600,146 A 30,30 0 0 1 570,176 L 30,176 A 30,30 0 0 1 0,146 L 0,55 A 30,30 0 0 1 30,25 Z");
+}
+
