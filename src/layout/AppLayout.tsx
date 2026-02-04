@@ -1,25 +1,33 @@
 import { GiCat } from "react-icons/gi";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Outlet } from "react-router";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
+import { useEffect, useState } from "react";
+import Navigation from '../assets/pages/Navigation';
 
 export default function AppLayout () {
-    const navigate = useNavigate();
+    const navigate                = useNavigate();
+    const [openMenu, setOpenMenu] = useState(false);
+    const { pathname }            = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname])
 
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-custom-black2">
-            <div className="fixed z-50 inset-0 flex items-center justify-center w-full h-20 sm:flex-row bg-custom-black2/50">
+            <div className="fixed top-0 left-0 z-50 w-full h-20 bg-custom-black2/50 backdrop-blur-sm flex items-center justify-between px-4">
                 
                 <button onClick={() => navigate('/')} className="flex">
                     <div className="bg-black/20 rounded-full h-11 w-11 flex ml-0 flex-col items-center justify-center pr-0.5">
                         <GiCat className=" text-custom-beige w-6 h-6"/>
                     </div>
                 </button>
-                <p className="text-[30px] gradient-text2 animate-gradient text-transparent font-jersey bg-gradient-to-r mr-[350px] ml-4 w-36"> Roaming Cats</p>
+                <p className="text-[30px] gradient-text2 animate-gradient text-transparent font-jersey bg-gradient-to-r"> Roaming Cats</p>
 
-                <button onClick={() => navigate("/navigation")} className="bg-custom-black2/40 z-50 hover:bg-black/20 font-jersey flex flex-row items-center justify-center w-16 h-16 rounded-full shadow-[200px]">
+                <button onClick={() => setOpenMenu(true)} className="bg-custom-black2/40 hover:bg-black/20 text-custom-beige flex items-center justify-center w-12 h-12 rounded-full transition-colors">
                     <RxHamburgerMenu className="size-7 text-custom-beige"/>
                 </button>
             </div>
@@ -41,6 +49,12 @@ export default function AppLayout () {
                 </button>
             </div>
             <p className="mb-5 text-custom-beige">roaming-cats | All rights reserved 2026</p>
+
+            {
+                openMenu && (
+                    <Navigation onClose={() => setOpenMenu(false)}/>
+                )
+            }
         </div>
     )
 }
