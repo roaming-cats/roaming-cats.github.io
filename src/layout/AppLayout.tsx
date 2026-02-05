@@ -16,6 +16,24 @@ export default function AppLayout () {
         window.scrollTo(0, 0)
     }, [pathname])
 
+    const handleExternalLinks = (link : string) : void => {
+        switch (link) {
+            case "github": 
+                window.open("https://github.com/roaming-cats", '_blank', 'noopener noreferrer')
+                break
+            case "gmail":
+                const email = "catsoinabox39@gmail.com" 
+                const encodedSubject = encodeURIComponent("...");
+                const encodedBody = encodeURIComponent("...");
+                const url = `https://mail.google.com/mail/?view=cm&fs=1&su=${encodedSubject}&to=${email}&body=${encodedBody}`;
+                window.open(url, '_blank', 'noopener noreferrer')
+                break
+            case "linkedin":
+                window.open("https://www.linkedin.com/in/aaron-enriquez-1215b43a6/", '_blank', 'noopener noreferrer')
+                break
+        }
+    }
+
     return (
         <div className="flex flex-col items-center justify-center w-full min-h-screen bg-custom-black2">
             <div className="fixed top-0 left-0 z-50 w-full h-20 bg-custom-black2/50 backdrop-blur-sm flex items-center justify-between px-4">
@@ -38,13 +56,13 @@ export default function AppLayout () {
             <hr className="h-px w-full bg-custom-beige/10 mb-10"/>
 
             <div className="flex items-center justify-center mb-5 ">
-                <button className="animate-color-pulse flex items-center justify-center mr-5 h-12 w-12 rounded-full drop-shadow-xl bg-custom-beige2">
+                <button onClick={() => handleExternalLinks("github")} className="animate-color-pulse flex items-center justify-center mr-5 h-12 w-12 rounded-full drop-shadow-xl bg-custom-beige2">
                     <FaGithub className="size-8"/>
                 </button>
-                <button className="animate-color-pulse flex items-center justify-center h-12 w-12 mr-5 rounded-full drop-shadow-xl bg-custom-beige2">
+                <button onClick={() => handleExternalLinks("gmail")} className="animate-color-pulse flex items-center justify-center h-12 w-12 mr-5 rounded-full drop-shadow-xl bg-custom-beige2">
                     <BiLogoGmail className="size-8"/>
                 </button>
-                <button className="animate-color-pulse flex items-center justify-center h-12 w-12 rounded-full drop-shadow-xl bg-custom-beige2">
+                <button onClick={() => handleExternalLinks("linkedin")} className="animate-color-pulse flex items-center justify-center h-12 w-12 rounded-full drop-shadow-xl bg-custom-beige2">
                     <FaLinkedinIn className="size-8"/>
                 </button>
             </div>

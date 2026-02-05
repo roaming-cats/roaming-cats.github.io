@@ -17,42 +17,46 @@ import { useNavigate } from "react-router";
 interface ProjectsProps {
     project : string;
     name : string;
+    desc : string;
+    // link : string;
 }
 
 interface CertificationsProps {
     certificate : string;
     name : string;
+    desc : string;
 }
 
 interface ActivitiesProps {
     activity : string;
     name : string;
+    desc : string;  
 }
 
 export const projectSlides : ProjectsProps[] = [
-    {project : empty, name : "empty"},
-    {project : empty, name : "empty"},
-    {project : empty, name : "empty"},
-    {project : empty, name : "empty"},
-    {project : empty, name : "empty"},
-    {project : empty, name : "empty"}
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {project : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"}
 ]
 
 export const activitySlides : ActivitiesProps[] = [
-    {activity : empty, name : "empty"},
-    {activity : empty, name : "empty"},
-    {activity : empty, name : "empty"},
-    {activity : empty, name : "empty"},
-    {activity : empty, name : "empty"},
-    {activity : empty, name : "empty"}
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"}
 ]
 
 export const certificateSlides : CertificationsProps[] = [
-    {certificate : empty, name : "empty"},
-    {certificate : empty, name : "empty"},
-    {certificate : empty, name : "empty"},
-    {certificate : empty, name : "empty"},
-    {certificate : empty, name : "empty"},
+    {certificate : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {certificate : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {certificate : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {certificate : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
+    {certificate : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
 ]
 
 export default function Profile (  ) {
@@ -69,7 +73,7 @@ export default function Profile (  ) {
                     </div> 
                     
                     <div 
-                        className="w-full max-w-[500px] aspect-[5/6] rounded-3xl shadow-lg bg-cover bg-center bg-no-repeat" 
+                        className="w-full max-w-[500px] aspect-[5/6] rounded-3xl shadow-lg bg-cover bg-center bg-no-repeat rgb-glow" 
                         style={{backgroundImage: `url('${profile}')`}}
                     ></div>  
                 </div>
@@ -176,7 +180,7 @@ export default function Profile (  ) {
                         </div>
                     </div>
 
-                    <button onClick={() => navigation("/certifications")} className="h-11 w-44 rounded-xl text-[20px] mt-6 bg-custom-orange drop-shadow-xl hover:scale-105 transition-transform mb-24 font-jersey">View In Detail</button>            
+                    <button onClick={() => navigation("/certifications")} className="relative h-11 w-44 rounded-xl text-[20px] mt-6 bg-custom-orange drop-shadow-xl hover:scale-105 transition-transform mb-24 font-jersey">View In Detail</button>            
 
                 </div>
 

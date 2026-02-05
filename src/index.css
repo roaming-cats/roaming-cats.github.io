@@ -65,16 +65,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.rect {
-  clip-path: path("M 30,60 L 180,60 A 30,30 0,0,0 210,30 L 210,30 A 30,30 0,0,1 240,0 L 420,0 A 30,30 0,0,1 450,30 L 450,570 A 30,30 0,0,1 420,600 L 30,600 A 30,30 0,0,1 0,570 L 0,90 A 30,30 0,0,1 30,60 Z");
-}
-
-.rect2 {
-clip-path: path("M 30,60 L 250,60 A 30,30 0,0,0 280,30 L 280,30 A 30,30 0,0,1 310,0 L 570,0 A 30,30 0,0,1 600,30 L 600,420 A 30,30 0,0,1 570,450 L 30,450 A 30,30 0,0,1 0,420 L 0,90 A 30,30 0,0,1 30,60 Z");
-}
-
-
 .gradient-text2 {
   background: linear-gradient(
       to right,
@@ -107,8 +97,14 @@ clip-path: path("M 30,60 L 250,60 A 30,30 0,0,0 280,30 L 280,30 A 30,30 0,0,1 31
   background-clip: text;
 }
 
-.title-rect {
-  clip-path: inset(0.5px round 24px 0);
+@keyframes glowing {
+  0% { box-shadow: 0 0 20px #FAF3E1; }
+  25% { box-shadow: 0 0 20px #F5E7C6; }
+  50% { box-shadow: 0 0 20px #FF6D1F; }
+  75% { box-shadow: 0 0 20px #222222; }
+  100% { box-shadow: 0 0 20px #F5E7C6; }
 }
 
-
+.rgb-glow {
+  animation: glowing 5s linear infinite;
+}
