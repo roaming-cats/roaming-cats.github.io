@@ -13,6 +13,13 @@ import react from "../icons/icons8-react-40.png";
 import tailwind from "../icons/icons8-tailwind-css.svg";
 import ts from "../icons/icons8-typescript.svg";
 import { useNavigate } from "react-router";
+import actOneFact from "../pictures/act1-fact-CapSjigS.png"
+import actMidFact from "../pictures/act1-mid-fact-3xOcatXu.png"
+import act2Mid from "../pictures/act2midpic-CdFN-Ycj.png"
+import pracPic from "../pictures/practice functions-CMiOYh6b.png"
+import dashboard from "../pictures/dashboard_3prac-BIsNn6Gk.png"
+import powerQuery from "../pictures/powerquery-BSPshuK2.png"
+import normalization from "../pictures/MidtermTask3_EnriquezJorizAaron-CHCs_vtq.png"
 
 interface ProjectsProps {
     project : string;
@@ -30,7 +37,8 @@ interface CertificationsProps {
 interface ActivitiesProps {
     activity : string;
     name : string;
-    desc : string;  
+    desc : string;
+    link: string;
 }
 
 export const projectSlides : ProjectsProps[] = [
@@ -43,12 +51,13 @@ export const projectSlides : ProjectsProps[] = [
 ]
 
 export const activitySlides : ActivitiesProps[] = [
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"},
-    {activity : empty, name : "empty", desc: "This is my project 1, this is where I did blah blah"}
+    {activity : actOneFact, name : "Practice Data Cleaning", desc: "This is my Activity 1, where I performed data cleaning on the sales data of various companies.", link: "https://drive.google.com/file/d/1qq8jOgJGBgxNipsLScm9ulcoRF7wXM6i/view"},
+    {activity : actMidFact, name : "Midterm Data Cleaning", desc: "This is similar to Activity 1 but instead, it was a midterm lab activity with a different dataset.", link: "https://drive.google.com/file/d/1tANfPY1mKH6H4JZmHj0VSLzQV0BvB19S/view"},
+    {activity : act2Mid, name : "Midterm Pivot Tables & Charts", desc: "This activity involves creating pivot tables from the cleaned dataset and creating visualizations based on those pivot tables.", link: "https://drive.google.com/file/d/1z4Ce8mTrDeLgoyqXOU1zQzfkyfRvA-kG/view"},
+    {activity : pracPic, name : "Practice Excel Functions", desc: "This task involved learning and applying a variety of built-in Excel functions to practice and strengthen my spreadsheet skills.", link: "https://drive.google.com/file/d/1RSjnKZPGjWMzeGDHdw14CEYhujOlEAGK/view"},
+    {activity : dashboard, name : "Practice Creating Dashboards", desc: "This task involves analyzing a cleaned dataset, creating pivot tables from the data, and designing a dashboard to visualize the insights.", link: "https://drive.google.com/file/d/1AyyQsk0rXgxnE93vSe_lHensua-iOcAZ/view"},
+    {activity : powerQuery, name : "Practice Power Query", desc: "This task involves using Power Query to clean and transform data, creating dimension and fact tables, and visualizing their relationship in the Data Model.", link: "https://drive.google.com/file/d/1aC4OK0zXFaZR-z5__jJdH44FVHozI799/view"},
+    {activity : normalization, name : "Midterm Normalization using Power Query", desc: "This task is similar to the Practice Power Query but this time, a much larger dataset was used.", link: "https://drive.google.com/file/d/1cgKrT6usM8h5PYObHlzmRQPk8umxAshW/view"}
 ]
 
 export const certificateSlides : CertificationsProps[] = [

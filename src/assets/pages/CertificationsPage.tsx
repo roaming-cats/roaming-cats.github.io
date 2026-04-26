@@ -8,30 +8,40 @@ export default function CertificationsPage () {
             <p className="text-custom-beige text-xl text-center my-4 mb-10">This section highlights the certifications I have earned, demonstrating my commitment to continuous learning and the development of relevant skills.</p>
             <hr className="h-px w-full bg-custom-beige mb-10"/>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                
+            <div className="w-full flex flex-col gap-4 ">
                 {certificateSlides.map((item, index) => (
-                    <div key={index} className="flex flex-col w-full p-5">
-                        
-                        <h2 className="text-3xl text-center text-custom-beige mb-4">
-                            {item.name}
-                        </h2>
+                    <div key={index} className="flex w-full items-center justify-between p-4 bg-white rounded-xl shadow-sm">
+                        <div className="flex items-center gap-4 flex-grow">
 
-                            <div  className="flex w-full aspect-square rounded-xl overflow-hidden rgb-glow relative group">
-                                <h1 className="hidden text-3xl w-full h-20 opacity-0 absolute inset-0 lg:flex lg:items-center lg:justify-center font-bold z-50 text-custom-black2 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">CLICK TO VIEW</h1>
-                                <img
-                                    src={item.certificate}
-                                    className="w-full h-full object-cover"
-                                    alt={item.name}
-                                />
+                            <div className="w-40 h-40 flex-shrink-0 overflow-hidden rounded-lg">
+                            <img
+                                src={item.certificate}
+                                alt={item.name}
+                                className="w-full h-full object-cover"
+                            />
                             </div>
 
-                            <div className="flex relative text-xl items-center w-full rounded-xl mt-5 p-7 bg-custom-beige2/90 border-2 border-custom-beige">
-                                {item.desc}
-                                <a href="" className="absolute bottom-0 right-0 mr-2 text-custom-orange lg:hidden">CLICK TO VIEW</a>
+                            <div className="pl-5 text-4xl flex flex-col">
+                                <h2 className="font-semibold text-gray-800">
+                                    {item.name}
+                                </h2>
+                                <p className="text-xl text-gray-500 line-clamp-2 max-w-xl">
+                                    {item.desc}
+                                </p>
                             </div>
-                    </div>
-                ))}
+                        </div>
+
+                        <div className="flex flex-col items-end gap-2">
+
+                            <div className="text-xl pr-3 flex gap-2">
+                            <button className="px-4 py-1 text-white bg-black rounded-full hover:bg-gray-800">
+                                Click to View
+                            </button>
+
+                            </div>
+                        </div>
+                        </div>
+                    ))}
 
             </div>
         </div>
