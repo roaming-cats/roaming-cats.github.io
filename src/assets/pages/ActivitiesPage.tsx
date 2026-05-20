@@ -1,12 +1,12 @@
 import { activitySlides } from "./ProfilePage"
 
-export default function ActivitiesPage () {
+export default function ActivitiesPage() {
     return (
         <div className="max-w-[1200px] w-screen mx-auto px-5 mt-28 pb-20 font-jersey">
-            
+
             <h1 className="text-4xl text-center text-custom-beige mb-4">ACTIVITIES</h1>
             <p className="text-custom-beige text-xl text-center my-4 mb-10">This section presents the activities I completed for my Data Analytics subject, showcasing the analytical skills, problem-solving abilities, and practical experience developed through hands-on work.</p>
-            <hr className="h-px w-full bg-custom-beige mb-10"/>
+            <hr className="h-px w-full bg-custom-beige mb-10" />
 
             <div className="w-full flex flex-col gap-4 ">
                 {activitySlides.map((item, index) => (
@@ -14,11 +14,11 @@ export default function ActivitiesPage () {
                         <div className="flex items-center gap-4 flex-grow">
 
                             <div className="w-40 h-40 flex-shrink-0 overflow-hidden rounded-lg">
-                            <img
-                                src={item.activity}
-                                alt={item.name}
-                                className="w-full h-full object-cover"
-                            />
+                                <img
+                                    src={item.activity}
+                                    alt={item.name}
+                                    className="w-full h-full object-cover border-black border-2"
+                                />
                             </div>
 
                             <div className="pl-5 text-4xl flex flex-col">
@@ -34,17 +34,17 @@ export default function ActivitiesPage () {
                         <div className="flex flex-col items-end gap-2">
 
                             <div className="text-xl pr-3 flex gap-2">
-                            <button className="px-4 py-1 text-white bg-black rounded-full hover:bg-gray-800">
-                                <a href={item.link} target="_blank" rel="noreferrer">
-                                    Click to View
-                                </a>
-                            </button>
+                                <button className="px-4 py-1 text-white bg-black rounded-full hover:bg-gray-800">
+                                    <a href={item.link} target="_blank" rel="noreferrer">
+                                        Click to View
+                                    </a>
+                                </button>
 
                             </div>
                         </div>
-                        </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
+        </div>
     )
 }
