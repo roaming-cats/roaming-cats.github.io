@@ -20,6 +20,8 @@ import pracPic from "../pictures/practice functions-CMiOYh6b.png"
 import dashboard from "../pictures/dashboard_3prac-BIsNn6Gk.png"
 import powerQuery from "../pictures/powerquery-BSPshuK2.png"
 import normalization from "../pictures/MidtermTask3_EnriquezJorizAaron-CHCs_vtq.png"
+import finalsPrac from "../pictures/Finals PRACTICE Task 01.png"
+import finals1 from "../pictures/Finals Task 1.png"
 import finals2 from "../pictures/Finals Task 2. Navigating Power BI.png"
 import finals3 from "../pictures/Finals Task 3. DAX Time Intelligence Function.png"
 import finals4 from "../pictures/Finals Task 4. Designing Interactive Reports.png"
@@ -63,12 +65,14 @@ export const activitySlides: ActivitiesProps[] = [
     { activity: dashboard, name: "Practice Creating Dashboards", desc: "This task involves analyzing a cleaned dataset, creating pivot tables from the data, and designing a dashboard to visualize the insights.", link: "https://drive.google.com/file/d/1AyyQsk0rXgxnE93vSe_lHensua-iOcAZ/view" },
     { activity: powerQuery, name: "Practice Power Query", desc: "This task involves using Power Query to clean and transform data, creating dimension and fact tables, and visualizing their relationship in the Data Model.", link: "https://drive.google.com/file/d/1aC4OK0zXFaZR-z5__jJdH44FVHozI799/view" },
     { activity: normalization, name: "Midterm Normalization using Power Query", desc: "This task is similar to the Practice Power Query but this time, a much larger dataset was used.", link: "https://drive.google.com/file/d/1cgKrT6usM8h5PYObHlzmRQPk8umxAshW/view" },
+    { activity: finalsPrac, name: "Finals PRACTICE Task 01", desc: "This task is for practicing SQL data-cleaning and validation queries", link: "https://drive.google.com/file/d/18yVGgbL2ne-lNZmH4I0kTE6dvyvi4ij2/view" },
+    { activity: finals1, name: "Finals Task 1. Data Preparations and Analysis using SQL", desc: "Use SQL to clean, organize, and analyze data efficiently", link: "https://drive.google.com/file/d/1SFN0djVZ6OvHSzmsEfzs38BNwzk2n69_/view" },
     { activity: finals2, name: "Finals Task 2. Navigating Power BI", desc: "This task involves navigating the Power BI workflow, including data preparation, modeling, analysis, and visualization to create insights.", link: "https://drive.google.com/file/d/163A5Kse4pVbc6gVNrXlKU-v0UmZggQc3/view" },
     { activity: finals3, name: "Finals Task 3. DAX Time Intelligence Function", desc: "Uses time intelligence functions to manage, analyze, and calculate date and time-based data.", link: "https://drive.google.com/file/d/1_05Qt_IS8iy6tCnuGsVET-X4nXAhZeV2/view" },
     { activity: finals4, name: "Finals Task 4. Designing Interactive Reports", desc: "Designs and creates Power BI reports by configuring visuals, syncing slicers, publishing to Power BI Service, and interacting with report visualizations.", link: "https://drive.google.com/file/d/1yALBiXoz5FT4_1ef-hZypGaoRjQuvNuL/view" },
     { activity: finals5, name: "Finals Task 5. Forecasting Reports in PowerBi", desc: "Create animated scatter charts to visualize data over time and use forecasting visuals to predict future values.", link: "https://drive.google.com/file/d/1v1spZ3b_Fq96J30mmaAsB2UNlMAxEMlv/view" },
     { activity: finalProject, name: "Final Project", desc: "A Data Analytics project showcasing the end-to-end Power BI workflow using a 100,000-record diabetes dataset.", link: "https://drive.google.com/file/d/1PKkePnSwy6KG9mDw1fe_JrvNswRGL3cj/view" },
-  
+
 ]
 
 export const certificateSlides: CertificationsProps[] = [
