@@ -4,7 +4,7 @@ export default function ActivitiesPage() {
     return (
         <div className="max-w-[1200px] w-screen mx-auto px-5 mt-28 pb-20 font-jersey">
 
-            <h1 className="text-4xl text-center text-custom-beige mb-4">ACTIVITIES</h1>
+            <h1 className="text-4xl text-center text-custom-beige mb-4">Data Analytics Activities</h1>
             <p className="text-custom-beige text-xl text-center my-4 mb-10">This section presents the activities I completed for my Data Analytics subject, showcasing the analytical skills, problem-solving abilities, and practical experience developed through hands-on work.</p>
             <hr className="h-px w-full bg-custom-beige mb-10" />
 

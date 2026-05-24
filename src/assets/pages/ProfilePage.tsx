@@ -176,7 +176,7 @@ export default function Profile() {
                     <button onClick={() => navigation("/projects")} className="h-11 w-44 z-40 rounded-xl text-[20px] mt-6 bg-custom-orange drop-shadow-xl hover:scale-105 transition-transform mb-24 font-jersey">View In Detail</button>
                 </div>
                 <div className="flex flex-col items-center mt-5">
-                    <h1 className="text-[50px] font-jersey mb-6 text-custom-beige">Activities</h1>
+                    <h1 className="text-[50px] font-jersey mb-6 text-custom-beige">Data Analytics</h1>
 
                     <div className="w-full max-w-xl aspect-square p-4 rounded-3xl flex items-center justify-center bg-black/15">
                         <div className="w-full h-full bg-black rounded-xl overflow-hidden">
